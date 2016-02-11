@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: black;
+    position: relative;
+    height: auto;
+}
+
+p, a, h1, h2, h3, h4, h5, h6 {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: large;
+}
+
+a:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    color: white;
+    cursor: default;
+    opacity: 0.9;
+}
+
+a:-webkit-any-link {
+    color: black;
+    text-decoration: none;
+    cursor: pointer !important;
+}
+
+#navigator {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0 22%;
+    background-color: #e81608;
+    z-index: 1;
+    text-align: center;
+}
+
+.nav-anchors-buttons {
+    margin: 5px 3%;
+    float: left;
+    position: relative;
+    line-height: 0;
+}
+
+.nav-anchors-buttons h3:hover {
+    color: white !important;
+    cursor: pointer;
+}
+
+#logo-sida {
+    height: 100%;
+    width: 100%;
+    padding: 50px 0;
+    background-color: white;
+}
+
+#logo-sida img {
+    width: 60%;
+    height: 60%;
+    margin: 5% 20%;
+}
+
+.parallax-window {
+    width: 100%;
+    height: 400px;
+}
+
+#parallax-start {
+    height: 780px;
+    padding-top: 100px;
+}
+
+.sida {
+    height: auto;
+    width: 100%;
+    padding: 70px 10px;
+}
+
+.sida-header {
+    margin: 0 auto 0;
+    text-align: center;
+    font-size: 500%;
+}
+
+.sida-text {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.sida-text p, h1, h3 {
+    opacity: 0.8;
+}
+
+#sida-1-anchor {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: 200px;
+}
+
+#person-holder {
+    width: auto;
+}
+
+#person-info {
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    border-top: solid grey 2px;
+    padding-top: 20px;
+    position: relative;
+}
+
+#person-info img {
+    height: 30%;
+    width: 50%;
+    margin: 0 25%;
+}
+
+#sida-2-anchor {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: 200px;
+}
+
+#parallax-bottom {
+    height: 400px;
+}
+
+#footer {
+    width: 100%;
+    height: 10px;
+    margin: 0 auto;
+    padding: 5px 30px;
+    float: right;
+    position: relative;
+}
+
+#footer p {
+    margin-bottom: 20px;
+    float: right;
+    font-size: medium;
+    color: white !important
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>WetellRacing</title>
+    <link rel="shortcut icon" href="./img/" type="image/x-icon">
+    <link rel="icon" href="./img/" type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./js/parallax.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $(document).bind("scroll", function () {
+                switch (true) {
+                    case this.offsetTop > $("sida-1").offsetTop:
+                        $("#nav-anchor-1").style("color", "white");
+                        break;
+
+                    case this.offsetTop > $("sida-2").offsetTop:
+                        $("#nav-anchor-2").style("color", "white");
+                        break;
+
+                    default:
+                        $("#nav-anchor-home").style("color", "white");
+                        break;
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="main-div">
+    <div id="navigator">
+        <a class="nav-anchors-buttons" id="nav-anchor-home" href="http://www.wetellracing.se"><h3>Home</h3></a>
+        <a class="nav-anchors-buttons" id="nav-anchor-1" href="#sida-1"><h3>Team</h3></a>
+        <a class="nav-anchors-buttons" id="nav-anchor-2" href="#sida-2"><h3>Bike</h3></a>
+        <a class="nav-anchors-buttons" id="nav-anchor-3" href="#sida-3"><h3>Sponsors</h3></a>
+        <a class="nav-anchors-buttons" id="nav-anchor-4" href="#sida-4"><h3>Contact</h3></a>
+    </div>
+
+    <div class="parallax-window" id="parallax-start" data-parallax="scroll" data-image-src="img/yamaha-r6-1.jpg"></div>
+
+    <div class="sida" id="sida-1">
+
+        <div class="sida-text-anchor">
+
+            <h1 style="color: #e81608" class="sida-header">Team history</h1>
+
+            <div class="sida-text">
+                <p>
+                    WetellRacing is a team of two people, Felix Wetell and Christer Wetell. The team started in 2014,
+                    with the purchase of the first bike, an Aprilia RS125 year model 2000. This was the beginning of the
+                    future racing career for Felix. Felix used the Aprilia for training during the year of 2015, getting
+                    a total of around 20 hours of riding. At the end of the season he raced in the Linköpings club
+                    championship finishing last. The point was not to win, but to gain race experince, track time and
+                    improve the riding.
+
+                    Late 2015, the Aprilia was up for sale and the search for a 600cc bike began. After a cople of
+                    months of research an Yamaha R6R 2006 was found for sale. It meet the requirment for a proper race bike
+                </p>
+
+            </div>
+
+            <section id="sida-1-anchor"/>
+        </div>
+
+        <h1 style="color: #e81608" class="sida-header">Team members</h1>
+
+        <div id="person-holder">
+            <div id="person-info">
+
+                <p> Nullam sit amet auctor mauris. Mauris lacinia eu tortor id laoreet. Nam luctus arcu a justo
+                    posuere,
+                    eget
+                    ullamcorper elit faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                    fames ac
+                    turpis egestas. Mauris feugiat vel turpis quis efficitur. Vestibulum ante ipsum primis in
+                    faucibus
+                    orci
+                    luctus et ultrices posuere cubilia Curae; Vivamus et ornare tortor, a sodales enim. Nunc dictum
+                    sagittis
+                    magna, sit amet tempor arcu hendrerit quis. Cras fringilla, velit non volutpat semper, purus
+                    mauris
+                    lacinia
+                    leo, quis tincidunt ex est vel mi. Proin a ullamcorper turpis. Donec non eros quis sapien mollis
+                    vehicula at
+                    ut nulla. Vivamus eros ligula, bibendum non orci quis, congue interdum metus. Sed interdum
+                    turpis
+                    massa,
+                    quis bibendum neque tempus sit amet. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-window" id="" data-parallax="scroll" data-image-src="img/yamaha-r6-2.jpg"></div>
+
+    <div class="sida" id="sida-2">
+        <h1 style="color: #e81608" class="sida-header">Bike</h1>
+
+        <div class="sida-text">
+            <p>
+                The bike is a Yamaha R6R 2006.
+            </p>
+
+        </div>
+
+        <section id="sida-2-anchor"/>
+    </div>
+
+    <div class="parallax-window" id="" data-parallax="scroll" data-image-src="img/yamaha-r6-3.jpg"></div>
+
+    <div class="sida" id="sida-3">
+        <h1 style="color: #e81608" class="sida-header">Sponsors</h1>
+
+        <section id="sida-3-anchor"/>
+    </div>
+
+    <div class="parallax-window" id="" data-parallax="scroll" data-image-src="img/yamaha-r6-4.jpg"></div>
+
+    <div class="sida" id="sida-4">
+        <h1 style="color: #e81608" class="sida-header">Contact</h1>
+
+        <section id="sida-4-anchor"/>
+    </div>
+
+
+    <div class="parallax-window" id="parallax-bottom" data-parallax="scroll" data-image-src="img/yamaha-r6-5.jpg"></div>
+
+
+    <div id="footer">
+        <p>Utvecklad av: <a target="_blank" style="color: #4fff2f; !important;"
+                            href="https://www.linkedin.com/pub/felix-wetell/94/19b/15a">Felix Wetell</a></p>
+    </div>
+</div>
+</body>
+
+</html>
