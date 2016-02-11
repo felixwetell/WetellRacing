@@ -3,10 +3,21 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5" >
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>WetellRacing</title>
     <link rel="shortcut icon" href="./img/" type="image/x-icon">
     <link rel="icon" href="./img/" type="image/x-icon">
+
+    <link rel="stylesheet" href="jquery.cufon-smooth-hover.css" type="text/css" media="all">
+    <script type="text/javascript" src="jquery.cufon-smooth-hover.min.js"></script>
+
+    <script type="text/javascript">
+      jQuery(document).ready(function($){
+        Cufon.replace('h3');
+        $.cufonHover();
+      });
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/parallax.js"></script>
@@ -88,27 +99,27 @@
         <h1 style="color: #e81608" class="sida-header">Team members</h1>
 
         <div id="person-holder">
-            <div id="person-info">
+            <div class="person-info" id="person-info-top">
+                <img src="img/felix_wetell.jpg">
+                <h1>Felix Wetell</h1>
+                  <div>
+                    <h3>Age: <b>18 years old</b></h3>
+                    <h3>Role: <b>Rider</b></h3>
 
-                <p> Nullam sit amet auctor mauris. Mauris lacinia eu tortor id laoreet. Nam luctus arcu a justo
-                    posuere,
-                    eget
-                    ullamcorper elit faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                    fames ac
-                    turpis egestas. Mauris feugiat vel turpis quis efficitur. Vestibulum ante ipsum primis in
-                    faucibus
-                    orci
-                    luctus et ultrices posuere cubilia Curae; Vivamus et ornare tortor, a sodales enim. Nunc dictum
-                    sagittis
-                    magna, sit amet tempor arcu hendrerit quis. Cras fringilla, velit non volutpat semper, purus
-                    mauris
-                    lacinia
-                    leo, quis tincidunt ex est vel mi. Proin a ullamcorper turpis. Donec non eros quis sapien mollis
-                    vehicula at
-                    ut nulla. Vivamus eros ligula, bibendum non orci quis, congue interdum metus. Sed interdum
-                    turpis
-                    massa,
-                    quis bibendum neque tempus sit amet. </p>
+                      <p>
+                      </p>
+                  </div>
+            </div>
+
+            <div class="person-info">
+                <img src="img/christer_wetell.jpg">
+                <h1>Christer Wetell</h1>
+                  <div>
+                    <h3>Age: <b>49 years old</b></h3>
+                    <h3>Role: <b>Mechanic</b></h3>
+                      <p>
+                      </p>
+                  </div>
             </div>
         </div>
     </div>
@@ -143,7 +154,6 @@
 
         <section id="sida-4-anchor"/>
     </div>
-
 
     <div class="parallax-window" id="parallax-bottom" data-parallax="scroll" data-image-src="img/yamaha-r6-5.jpg"></div>
 
