@@ -150,7 +150,18 @@ a:-webkit-any-link {
     margin-top: 200px;
 }
 
+.contact-information h3 {
+    text-align: left;
+}
 
+.contact-information a {
+    color: red;
+}
+
+.contact-information a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 #parallax-bottom {
     height: 400px;
