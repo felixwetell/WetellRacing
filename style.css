@@ -136,6 +136,22 @@ a:-webkit-any-link {
     margin-top: 200px;
 }
 
+#sida-2 a {
+  color: white;
+}
+
+#sida-2 a:hover {
+    color: red;
+}
+
+#sida-2 li {
+    font-size: large;
+}
+
+#sida-2 li:hover {
+    color: red;
+}
+
 #sida-3-anchor {
     width: 100px;
     height: 100px;
@@ -171,18 +187,28 @@ a:-webkit-any-link {
     width: 100%;
     height: 10px;
     margin: 0 auto;
-    padding: 5px 30px;
+    padding: 10px 0;
     float: right;
     position: relative;
 }
 
+#footer-copyright {
+    text-align: center !important;
+    float: none !important;
+}
+
 #footer p {
-    margin-bottom: 20px;
-    float: right;
-    font-size: medium;
-    color: white !important
+    margin: 10px 30px 20px;
+    float: left;
+    font-size: x-small;
+    color: grey !important;
+}
+
+#footer a {
+  color: grey;
 }
 
 #footer a:hover {
+    color: #4fff2f !important;
     text-decoration: underline;
 }
