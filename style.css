@@ -121,8 +121,12 @@ a:-webkit-any-link {
 .person-info h1, h3 {
   text-align: center;
 }
-.person-info b:hover {
-  color: red;
+
+.person-info h3 {
+    color: gold;
+}
+.person-info b {
+  color: white !important;
 }
 
 #person-info-top {
@@ -134,6 +138,10 @@ a:-webkit-any-link {
     height: 100px;
     position: absolute;
     margin-top: 200px;
+}
+
+#sida-2 h4 {
+    color: gold;
 }
 
 #sida-2 a {
